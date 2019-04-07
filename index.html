@@ -1,0 +1,121 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html">
+<title>Login</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<style type="text/css">
+body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color:#38414f;
+  background-image:url(bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+.box{
+  width: 300px;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: #191919;
+  text-align: center;
+}
+.box h1{
+    font-size: 75px;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #dee2e8;
+	background-image: url(water.png);
+	-webkit-background-clip:text;
+	animation: water 60s infinite;
+}
+@keyframes water {
+	from{
+        background-position: left 0px top 0;	
+	}
+	to{
+		background-position: left 1000px top 0;
+	}
+}
+.box input[type = "text"],.box input[type = "password"]{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #3498db;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+.box input[type = "text"]:focus,.box input[type = "password"]:focus{
+  width: 280px;
+  border-color: #2ecc71;
+}
+.box input[type = "submit"]{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #2ecc71;
+  padding: 14px 40px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+.box input[type = "submit"]:hover{
+  background: #2ecc71;
+}
+
+ .footer{
+     background:#333;
+     padding:12px;
+     color:#fff;
+     position:bottom;
+ }
+ .fa-heart-o{
+     
+     margin:3px;
+     color:red;
+ }
+
+
+
+
+
+</style>
+</head>
+<body>
+
+
+
+<form class="box" action="LoginController" method="post">
+  <h1>Login</h1>
+  <input type="text" name="username" placeholder="Username">
+  <input type="password" name="password" placeholder="Password">
+  <input type="submit" name="" value="Login">
+</form>
+
+<footer>
+<div class="container text-center">
+<p>Made with<i class="fa fa-heart-o"></i>Anmy developer's</p>
+</div>
+</footer>
+</body>
+</html>
